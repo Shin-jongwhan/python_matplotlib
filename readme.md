@@ -23,7 +23,7 @@ plt.savefig("heatmap.png")
 ### 다른 예시
 ### 아래 같은 경우 label 의 이름이 너무 길어서 bbox_inches='tight' 로 자동 조정하게 해주었다. default size 가 지정되지만, 사이즈가 안 맞으면 자동 조정
 ```
-...
+...        # 데이터 가져오는 부분 생략
     plt.figure(figsize = (15,15), dpi=80)    # default size
     plt.matshow(lsMatrix, vmin = np.min(lsMatrix), vmax = np.max(lsMatrix))
     plt.title("cpg_rate")
